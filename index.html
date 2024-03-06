@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -13,17 +13,17 @@
     
     <div class="nav">
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About us</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">More</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">More</a></li>
         </ul>
     </div>
 
 <!-- VALORANT CONTAINER -->
     <div class="valo-container">
         <video id="valo-vid" class="bg-vid bg-vid-1" autoplay muted loop plays-inline>
-            <source src="../source-files/vid/valorant.mp4" type="video/mp4">
+            <source src="source-files/vid/valorant.mp4" type="video/mp4">
         </video>
 
         <div class="valo-h1">
@@ -35,7 +35,7 @@
             <div class="check-about-us">
                 <div class="about-us quantico-regular">
                     <p>Check About Us</p>
-                    <a href="../page/about.html">
+                    <a href="#">
                         <ion-icon name="arrow-forward-circle-sharp" class="about-button"></ion-icon>
                     </a>
                 </div>
@@ -89,20 +89,10 @@
 
     <div class="league-container">
         <video class="bg-vid bg-vid-2" autoplay muted loop>
-            <source src="../source-files/vid/league.mp4" type="video/mp4">
+            <source src="source-files/vid/league.mp4" type="video/mp4">
         </video>
     </div>
 
+    <script src="js/main.js"></script>
 </body>
-<script>
-function scroll_left() {
-    var left = document.querySelector(".valo-videos");
-    left.scrollBy(-350, 0)
-}
-
-function scroll_right() {
-    var right = document.querySelector(".valo-videos");
-    right.scrollBy(360, 0)
-}
-</script> 
 </html>
