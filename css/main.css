@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quantico", sans-serif;
+}
+.bg-vid-1{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+@media (min-aspect-ratio: 16/9){
+    .bg-vid{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .bg-vid{
+        width: auto;
+        height: 100%;
+    }
+}
+/*-----------------------*/
+.quantico-regular {
+    font-family: "Quantico", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .quantico-bold {
+    font-family: "Quantico", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .quantico-regular-italic {
+    font-family: "Quantico", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .quantico-bold-italic {
+    font-family: "Quantico", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+/*-----------------------*/
+.nav{
+    z-index: 1;
+    width: 100%;
+    height: 7vh;
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    align-items: center;
+}
+.nav ul{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav ul li{
+    list-style: none;
+}
+.nav ul li a{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-family: "Quantico", sans-serif;
+    padding: 30px;
+    margin: 30px;
+    width: 100%;
+    height: 20px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.nav ul li a:hover{
+    background-color: rgb(78, 78, 78);
+    transition: 0.5s;
+}
+
+/*--------------------------------------------------------------*/
+
+
+@keyframes to-right-animation{
+    from{
+        opacity: 0;
+        transform: translateX(1500px);
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes to-left-animation{
+    from{
+        transform: translateX(-1500px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes fade-animation{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+/*--------------------------------------------------------------*/
+
+.valo-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    background: radial-gradient(rgba(138, 39, 39, 0), #f4433681);
+    overflow: hidden;
+}
+.valo-text-1{
+    animation: to-left-animation 1s 6s ease forwards;
+    margin-top: 10%;
+    font-size: 120px;
+    color: white;
+    transition: 0.5s;
+    display: flex;
+    transform: translateX(1500px);
+    opacity: 0;
+
+}.valo-text-2{
+    animation: to-right-animation 1s 6s ease forwards;
+    display: flex;
+    color: white;
+    transition: 0.5s;
+    font-size: 130px;
+    justify-content: left;
+    transform: translateX(-1500px);
+    opacity: 0;
+}
+.valo-text-3{
+    animation: fade-animation 1s 6s ease forwards;
+    opacity: 0;
+    color: white;
+    font-size: 40px;
+}
+.valo-h1{
+    margin-top: 15%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.valo-text-1:hover{
+    text-shadow: #f44336 3px 5px,
+    rgb(140, 238, 255) -3px -5px;
+}
+.valo-text-2:hover{
+    transform: translateX(10px);
+    text-shadow: #f44336 3px 5px,
+    rgb(140, 238, 255) -3px -5px;
+}
+.check-about-us{
+    width: 100%;
+    color: white;
+    background-color:#b42b211c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    opacity: 0;
+    animation: fade-animation 1s 6s ease forwards;
+}
+.about-us{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+}
+.check-about-us a{
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: flex;
+}
+.about-button{
+    transition: 0.5s;
+}
+.about-button:hover{
+    transform: translateX(10px);
+}
+
+/*-----*/
+
+.valo-vid-container{
+    width: 100%;
+    height: 45vh;
+    background-color: #f44336;
+    padding-top: 1%;
+}
+.random-clip-text{
+    color: white;
+    margin-top: 40px;
+    font-weight: 700;
+    padding-left: 20px;
+    align-items: center;
+    display: flex;
+    margin: 10px 20px;
+}
+.random-clip-text ion-icon{
+    margin: 0px 20px;
+}
+.valo-vids{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.valorant-clip{
+    display: flex;
+    align-items: center;
+    background-color: #5e130e7c;
+    height: auto;
+    width: auto;
+    overflow: hidden;
+}
+#right_button, #left_button{
+    transition: 0.5s;
+    font-size: 100px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#right_button, #left_button:hover{
+    cursor: pointer;
+}
+#right_button:hover{
+    transform: translateX(10px);
+}
+#left_button:hover{
+    transform: translateX(-10px);
+}
+.valo-clips{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.valo-videos{
+    display: flex;
+    display: inline-flex;
+    justify-content: left;
+    align-items: center;
+    width: auto;
+    width: 88%;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: proximity;
+}
+iframe{
+    transition: 0.5s;
+    border-radius: 10px;
+    margin: 36px;
+    margin: 20px;
+    height: 100%;
+    width: 100%;
+}
+iframe:hover{
+    scale: 1.05;
+}
+/* LEAGUE CONTAINEER */
+.league-container{
+    width: 100%;
+    height: 100vh;
+}
+.bg-vid-2{
+    position: absolute;
+    z-index: -1;
+}
+
